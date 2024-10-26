@@ -15,7 +15,6 @@ public class Raycast : MonoBehaviour {
     private bool isBookOpen = false;  // Trạng thái mở sách
     private Camera _camera;
 
-
     private DoorController raycastedObj0;
     private DoorAltroller raycastedObj1;
     private FanSwitchController fanController;
@@ -168,11 +167,11 @@ public class Raycast : MonoBehaviour {
         isBookOpen = !isBookOpen;
         bookCanvas.gameObject.SetActive(isBookOpen);
 
-        if (isBookOpen) {
+        /*if (isBookOpen) {
             Debug.Log("Book opened.");
         } else {
             Debug.Log("Book closed.");
-        }
+        }*/
     }
 
     void PickupObject(GameObject pickedObject) {
@@ -219,7 +218,7 @@ public class Raycast : MonoBehaviour {
 
     void HighlightCrosshair(bool on) {
         if (on) {
-            crosshair.color = Color.red;
+            crosshair.color = Color.magenta;
         } else {
             crosshair.color = Color.white;
         }
