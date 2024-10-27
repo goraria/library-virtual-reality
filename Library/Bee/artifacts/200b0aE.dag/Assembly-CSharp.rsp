@@ -362,7 +362,6 @@
 "Assets/Scripts/DoorRaycast.cs"
 "Assets/Scripts/FanController.cs"
 "Assets/Scripts/FanSwitchController.cs"
-"Assets/Scripts/Jang.cs"
 "Assets/Scripts/LightSwitchController.cs"
 "Assets/Scripts/NoteController.cs"
 "Assets/Scripts/PersonLook.cs"
