@@ -63,7 +63,6 @@
     <Compile Include="Assets/Scripts/PickupController.cs" />
     <Compile Include="Assets/Scripts/FanSwitchController.cs" />
     <Compile Include="Assets/Scripts/AutoFlip.cs" />
-    <Compile Include="Assets/Scripts/Jang.cs" />
     <Compile Include="Assets/Scripts/NoteController.cs" />
     <Compile Include="Assets/Scripts/Raycast.cs" />
     <Compile Include="Assets/Scripts/DoorRaycast.cs" />
