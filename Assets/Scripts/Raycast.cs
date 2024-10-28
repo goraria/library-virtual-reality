@@ -28,9 +28,9 @@ public class Raycast : MonoBehaviour {
     private GameObject heldObj;
     private Rigidbody heldObjRB;
 
-    [Header("Physics Parameters")]
-    [SerializeField]
-    private float pickupRange = 5.0f;
+    // [Header("Physics Parameters")]
+    // [SerializeField]
+    // private float pickupRange = 5.0f;
 
     [SerializeField] private float pickupForce = 150.0f;
 
