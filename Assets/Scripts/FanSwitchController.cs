@@ -5,7 +5,7 @@ using UnityEngine;
 public class FanSwitchController : MonoBehaviour
 {
     [SerializeField] private Animator doorAnim = null;
-    private bool doorOpen = false;
+    private bool fanOpen = false;
     [SerializeField] private int waitTimer = 1;
     [SerializeField] private bool pauseInteraction = false;
     
@@ -18,16 +18,16 @@ public class FanSwitchController : MonoBehaviour
 
     public void ToggleFan()
     {
-        if (!doorOpen && !pauseInteraction)
+        if (!fanOpen && !pauseInteraction)
         {
             doorAnim.Play("fan1Rotate", 0, 0.0f);
-            doorOpen = true;
+            fanOpen = true;
             StartCoroutine(PauseDoorInteraction());
         }
-        else if (doorOpen && !pauseInteraction)
+        else if (fanOpen && !pauseInteraction)
         {
             doorAnim.Play("fan1Stop", 0, 0.0f);
-            doorOpen = false; 
+            fanOpen = false; 
             StartCoroutine(PauseDoorInteraction());
         }
     }
