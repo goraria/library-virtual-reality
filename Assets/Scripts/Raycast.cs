@@ -89,9 +89,9 @@ public class Raycast : MonoBehaviour {
                     raycastedObj1.PlayAnimation();
                 }
             } else if (hit.collider.CompareTag(switchTag)) {
+                fanController = hit.collider.gameObject.GetComponent<FanSwitchController>();
+                CrosshairChange(true);
                 if (!doOnce) {
-                    fanController = hit.collider.gameObject.GetComponent<FanSwitchController>();
-                    CrosshairChange(true);
                 }
 
                 isCrosshairActive = true;
@@ -101,9 +101,10 @@ public class Raycast : MonoBehaviour {
                     fanController.ToggleFan();
                 }
             } else if (hit.collider.CompareTag(lightTag)) {
+                lightController = hit.collider.gameObject.GetComponent<LightSwitchController>();
+                CrosshairChange(true);
+                
                 if (!doOnce) {
-                    lightController = hit.collider.gameObject.GetComponent<LightSwitchController>();
-                    CrosshairChange(true);
                 }
 
                 isCrosshairActive = true;
